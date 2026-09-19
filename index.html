@@ -7,6 +7,20 @@
 <meta name="mobile-web-app-capable" content="yes">
 <title>One Futebol Performance — Eleve seu jogo</title>
 <meta name="description" content="Academia de futebol em Paulínia - SP. Treinos da elite para atletas que querem subir de nível: técnico, tático, físico e mental.">
+
+<!-- ícones da marca -->
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<!-- prévia ao compartilhar o link (WhatsApp, Instagram, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="One Futebol Performance">
+<meta property="og:title" content="One Futebol Performance — Eleve seu jogo">
+<meta property="og:description" content="Treinos da elite para atletas que não aceitam o nível médio. Paulínia - SP.">
+<meta property="og:image" content="https://consultoriatagdigital-coder.github.io/one-futebol-performance/assets/img/og-cover.jpg">
+<meta property="og:url" content="https://consultoriatagdigital-coder.github.io/one-futebol-performance/">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Anton&display=swap" rel="stylesheet">
@@ -70,7 +84,9 @@ footer.site .logo{display:flex;align-items:center}   /* vence o .fcol a{display:
 /* ---------- menu mobile ---------- */
 .drawer{position:fixed;inset:0;background:#fff;z-index:80;transform:translateX(100%);transition:transform .3s ease;padding:24px;display:flex;flex-direction:column;gap:4px}
 .drawer.open{transform:translateX(0)}
-.drawer .close{align-self:flex-end;font-size:28px;line-height:1;padding:8px}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.drawer-top .logo{font-size:15px;white-space:nowrap}
+.drawer .close{font-size:30px;line-height:1;padding:4px 8px}
 .drawer a{font-family:var(--fd);font-size:30px;text-transform:uppercase;padding:10px 0;border-bottom:1px solid var(--line)}
 
 /* ---------- hero ---------- */
@@ -427,7 +443,10 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
 </header>
 
 <div class="drawer" id="drawer">
-  <button class="close" id="drawerClose" aria-label="Fechar">&times;</button>
+  <div class="drawer-top">
+    <span class="logo"><span class="mark" aria-hidden="true">1</span> One Futebol Performance</span>
+    <button class="close" id="drawerClose" aria-label="Fechar">&times;</button>
+  </div>
   <a href="#treinos">Treinos</a>
   <a href="#metodologia">Metodologia</a>
   <a href="#planos">Planos</a>
@@ -632,7 +651,7 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
 <section class="vitrine" id="vitrine">
   <div class="wrap">
     <div class="co-brand reveal">
-      <span class="b"><i>1</i> One Futebol Performance</span>
+      <span class="b"><i aria-hidden="true">1</i> One Futebol Performance</span>
       <span class="x">&times;</span>
       <img src="assets/img/vitrine-logo.png" alt="Vitrine do Atleta" class="vit-logo">
     </div>

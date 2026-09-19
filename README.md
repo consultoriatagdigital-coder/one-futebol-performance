@@ -48,6 +48,8 @@ Arquivos usados:
 | `vitrine.jpg` | foto dentro do celular na seção da parceria |
 | `vitrine-logo.png` | logo oficial da Vitrine do Atleta (baixada do site deles) |
 | `one-logo.png` / `one-logo-dark.png` | logo da One (versão branca para fundo escuro e escura para fundo claro) |
+| `favicon.png`, `apple-touch-icon.png` | ícone da aba e do atalho na tela do celular |
+| `og-cover.jpg` | imagem que aparece ao compartilhar o link no WhatsApp |
 
 > As fotos atuais são do Unsplash (uso livre) e servem só como placeholder.
 > Substitua pelas fotos reais da One e dos atletas antes de publicar.
@@ -59,6 +61,9 @@ Arquivos usados:
 - Carrosséis por arraste, sem setas
 - Campos do formulário com 16px para não dar zoom no iOS
 - Respeita `safe-area` (iPhone com notch)
+
+> A prévia de compartilhamento (`og:image`/`og:url`) aponta para a URL do GitHub Pages.
+> Se o site mudar de endereço, atualize essas duas tags no `<head>`.
 
 ## Antes de publicar — revisar
 
