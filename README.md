@@ -64,9 +64,9 @@ Arquivos usados:
 - Números da seção de estatísticas (placeholders)
 - Depoimentos (fictícios)
 - Planos, durações e níveis das sessões da One
-- Link do WhatsApp na barra fixa (`https://wa.me/` está vazio)
 - Endereço e horários no rodapé
-- Formulário: conectar a WhatsApp, e-mail ou CRM
+- WhatsApp: número +55 19 98294-4348 já ligado na barra fixa, no rodapé, na barra do topo,
+  no botão "Falar com um treinador" e no formulário (constante `WHATSAPP` no script)
 - Quais planos da One realmente incluem o portfólio (hoje o site diz: trimestral e anual)
 - Texto e formato do parecer técnico assinado pela One (selo e responsável)
 - Uso da logo da Vitrine do Atleta: confirmar arquivo oficial e regras de aplicação com eles
