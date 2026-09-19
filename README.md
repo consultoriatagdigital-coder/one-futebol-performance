@@ -47,6 +47,7 @@ Arquivos usados:
 | `cta.jpg` | fundo do CTA final |
 | `vitrine.jpg` | foto dentro do celular na seção da parceria |
 | `vitrine-logo.png` | logo oficial da Vitrine do Atleta (baixada do site deles) |
+| `one-logo.png` / `one-logo-dark.png` | logo da One (versão branca para fundo escuro e escura para fundo claro) |
 
 > As fotos atuais são do Unsplash (uso livre) e servem só como placeholder.
 > Substitua pelas fotos reais da One e dos atletas antes de publicar.

@@ -51,7 +51,10 @@ header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid 
 header.stuck{border-color:var(--line)}
 .nav{display:flex;align-items:center;height:var(--nav-h)}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--fd);font-size:20px;letter-spacing:.5px;text-transform:uppercase}
-.logo .mark{width:38px;height:38px;background:var(--black);color:#fff;display:grid;place-items:center;font-family:var(--fd);font-size:17px;line-height:1;border-radius:3px}
+/* marca "1 ONE": logo oficial da One (branca sobre quadrado preto) */
+.logo .mark{display:inline-block;width:38px;height:38px;background:var(--black) url('assets/img/one-logo.png') center/auto 76% no-repeat;
+  border-radius:3px;flex:none;text-indent:-999em;overflow:hidden}
+footer.site .logo{display:flex;align-items:center}   /* vence o .fcol a{display:block} */
 .menu{display:flex;gap:26px;margin:0 auto;height:100%}
 .menu > a{display:flex;align-items:center;height:100%;font-weight:500;font-size:16px;border-bottom:2px solid transparent}
 .menu > a:hover{border-color:var(--black)}
@@ -252,7 +255,7 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
 .vitrine .wrap{position:relative;z-index:2}
 .co-brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
 .co-brand .b{display:flex;align-items:center;gap:8px;font-family:var(--fd);font-size:15px;text-transform:uppercase;letter-spacing:.02em}
-.co-brand .b i{width:28px;height:28px;background:#fff;color:#111;display:grid;place-items:center;border-radius:3px;font-style:normal;font-family:var(--fd);font-size:14px}
+.co-brand .b i{width:28px;height:28px;background:#fff url('assets/img/one-logo-dark.png') center/auto 66% no-repeat;border-radius:3px;flex:none;text-indent:-999em;overflow:hidden}
 .co-brand .x{color:var(--red);font-size:18px}
 .vit-logo{height:42px;width:auto}
 
@@ -268,7 +271,7 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
 .vit-card li::before{content:"";position:absolute;left:0;top:6px;width:10px;height:10px;background:var(--red);
   clip-path:polygon(0 50%,35% 100%,100% 10%,85% 0,33% 70%)}
 .selo{display:flex;align-items:center;gap:12px;margin-top:16px;padding:12px;background:rgba(0,0,0,.45);border:1px dashed rgba(255,255,255,.28)}
-.selo-mark{width:34px;height:34px;flex:none;background:#fff;color:#111;display:grid;place-items:center;border-radius:3px;font-family:var(--fd);font-size:17px}
+.selo-mark{width:34px;height:34px;flex:none;background:#fff url('assets/img/one-logo-dark.png') center/auto 66% no-repeat;border-radius:3px;text-indent:-999em;overflow:hidden}
 .selo b{display:block;font-size:13px}
 .selo span{font-size:12px;color:#a9a9a9}
 
@@ -277,7 +280,7 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
 .pf-parecer b{display:block;font-size:11px;margin:4px 0 4px}
 .pf-parecer span{display:block;font-size:10.5px;line-height:1.35;color:#c4c4c4}
 .pf-parecer em{display:block;font-style:normal;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#7d7d7d;margin-top:6px}
-.pf-selo{display:inline-grid;place-items:center;width:20px;height:20px;background:#fff;color:#111;font-family:var(--fd);font-size:11px;border-radius:2px}
+.pf-selo{display:inline-block;width:20px;height:20px;background:#fff url('assets/img/one-logo-dark.png') center/auto 68% no-repeat;border-radius:2px;text-indent:-999em;overflow:hidden}
 .vit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .vitrine h2{font-family:var(--fd);font-size:clamp(36px,6vw,74px);text-transform:uppercase;line-height:.92;margin-bottom:16px}
 .vitrine h2 em{font-style:normal;color:var(--red)}
@@ -396,7 +399,7 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
 <!-- ============ HEADER ============ -->
 <header id="header">
   <div class="wrap nav">
-    <a href="#" class="logo"><span class="mark">1</span> One Futebol Performance</a>
+    <a href="#" class="logo"><span class="mark" aria-hidden="true">1</span> One Futebol Performance</a>
     <nav class="menu">
       <a href="#treinos">Treinos</a>
       <a href="#metodologia">Metodologia</a>
@@ -656,7 +659,7 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
             <h3>Parecer técnico assinado pela One</h3>
             <p>Dentro do portfólio existe uma seção que nenhum atleta consegue comprar: a avaliação do professor sobre fundamentos, evolução e potencial, registrada com selo e assinatura da One Futebol Performance.</p>
             <div class="selo">
-              <span class="selo-mark">1</span>
+              <span class="selo-mark" aria-hidden="true">1</span>
               <div><b>Parecer técnico One Performance</b><span>Avaliado e assinado por treinador da One</span></div>
             </div>
           </article>
@@ -690,7 +693,7 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
               </div>
               <div class="pf-vid"></div>
               <div class="pf-parecer">
-                <span class="pf-selo">1</span>
+                <span class="pf-selo" aria-hidden="true">1</span>
                 <b>Parecer técnico One Performance</b>
                 <span>&ldquo;Excelente controle orientado e leitura de espaços curtos. Evoluiu 2 níveis em finalização no último ciclo.&rdquo;</span>
                 <em>Treinador One · ciclo 2026.1</em>
@@ -779,7 +782,7 @@ footer.site{background:#111;color:#fff;padding:56px 0 28px}
   <div class="wrap">
     <div class="fgrid">
       <div class="fcol">
-        <a href="#" class="logo" style="color:#fff;margin-bottom:14px"><span class="mark" style="background:#fff;color:#111">1</span> One Futebol Performance</a>
+        <a href="#" class="logo" style="color:#fff;margin-bottom:14px"><span class="mark" style="background-color:transparent;background-size:auto 100%;border-radius:0"></span> One Futebol Performance</a>
         <p style="max-width:340px">Academia de futebol em Paulínia - SP. Formando jogadores mais completos com treinos da elite.</p>
         <div class="socials">
           <a href="https://instagram.com/onefperformance" target="_blank" rel="noopener" aria-label="Instagram">
